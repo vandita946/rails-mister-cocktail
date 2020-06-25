@@ -1,3 +1,37 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1582837611539-e3020079eab6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=694&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Satisfy', cursive;
+}
+h1 {
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+}
+h4, h5{
+    color: white;
+    font-family: 'Satisfy', cursive;
+}
+a {
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 30px;
+    &:hover {
+        color: bisque;
+        text-decoration: none;
+    }
+}
+li {
+    color: white;
+    font-size: 35px;
+}
+
+.container {
+    padding: 40px;
+}
