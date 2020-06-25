@@ -1,11 +1,15 @@
 <div class="container">
-    <h4>Name: <%= @cocktail.name %></h4>
-    <h4>Ingredients and doses: </h4>
+    <h4><%= @cocktail.name.capitalize %></h4>
+    <h5>Recipe: </h5>
     <ul>
         <% @cocktail.doses.each do |dose| %>
-            <li><%= dose.description %> of <%= dose.ingredient.name %></li>
+            <li><%= dose.description %> of <%= dose.ingredient.name %> 
+            <%= link_to '🗑', dose_path(dose),
+            data: {:confirm => 'Are you sure?'}, :method => :delete %>
+        </li></li>
         <% end %>
-        <li><%= link_to "Add an ingredient and its dose", new_cocktail_dose_path(@cocktail) %></li>
+        <li><%= link_to "Add another ingredient!", new_cocktail_dose_path(@cocktail) %></li>
     </ul>
+    <%= link_to "Back", cocktails_path %>
 
 </div>

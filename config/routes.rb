@@ -9,9 +9,9 @@ Rails.application.routes.draw do
   # dose routes
   # new - user can add a new dose to an existing cocktail (ingredient/description pair)
   # delete - user can delete dose that belongs to an existing cocktail
-
+  root :to => 'cocktails#index'
   resources :cocktails, only: [:index, :show, :create, :new] do
-    resources :doses, only: [:new, :create, :destroy]
+    resources :doses, only: [:new, :create]
   end
-
+  resources :doses, only: [:destroy]
 end
