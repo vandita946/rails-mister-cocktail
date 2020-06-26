@@ -10,6 +10,6 @@ require 'json'
 
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 cocktail_api = JSON.parse(open(url).read)
-10.times do |num|
+100.times do |num|
     Ingredient.create(name: cocktail_api["drinks"][num]["strIngredient1"])
 end
