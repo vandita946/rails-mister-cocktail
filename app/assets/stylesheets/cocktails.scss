@@ -3,36 +3,26 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 body {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(#e66465,0.2), rgba(#9198e5,0.2)), url(https://images.unsplash.com/photo-1582837611539-e3020079eab6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=694&q=80);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1582837611539-e3020079eab6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=694&q=80);
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Satisfy', cursive;
-}
-h1 {
+    font-family: 'Playball', cursive;
     color: white;
-    font-family: 'Satisfy', cursive;
-    font-size: 50px;
-}
-h4, h5{
-    color: white;
-    font-family: 'Satisfy', cursive;
-}
-a {
-    font-family: 'Satisfy', cursive;
-    color: white;
-    font-size: 30px;
-    &:hover {
-        color: bisque;
-        text-decoration: none;
+    a {
+      color: white;  
+      &:hover{
+          text-decoration: none;
+          color: wheat;
+      }
     }
-}
-li {
-    color: white;
-    font-size: 35px;
 }
 
 .container {
     padding: 40px;
+    h1, h2, h3, h4, h5, h6, p {
+        font-family: 'Playball', cursive;
+        color: white;
+    }
 }
